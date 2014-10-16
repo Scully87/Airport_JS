@@ -33,14 +33,15 @@ describe('Airport', function() {
 	});
 
 	it('should be able to not breach capacity', function() {
-		// airport.fill_airport
-		airport.land(plane)
-		airport.land(plane)
-		airport.land(plane)
-		airport.land(plane)
-		airport.land(plane)
+		fillAirport(airport)
 		expect(airport.land(plane)).toEqual("Fly away please!!")
 	});
+
+	fillAirport = function(airport) {
+		for (var i = 0; i < 5; i++) {
+ 			airport.land(plane);
+		};
+	}
 
 });
 		
