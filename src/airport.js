@@ -14,5 +14,19 @@ Airport.prototype.land = function(plane) {
 };
 
 Airport.prototype.takeoff = function(plane) {
-	this.planes.pop(plane);
+	if(this.planes.indexOf(plane) !== -1);
+		return plane;
 };
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 	// return(this.planes.pop(plane));
